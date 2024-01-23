@@ -36,16 +36,31 @@ div#titulo{
 	padding: 55px 0;
 }
 
+div.menu{
+	background-color: #a77e58;
+	color: #ffffff;
+	margin-top: 10px;
+}
+
+div.menu ul{
+	padding: 10px;
+}
+
+div.menu ul li{	
+	display: inline;
+}
+
 div.menu ul li a{
 	background-color: #a77e58;
 	color: #ffffff;
 	font-family: 'Helvetica', sans-serif;
 	font-size: 18px;
-	
+	text-decoration: none;
+	margin: 10px;
 }
 
 div.menu ul li a:hover{
-	background-color: #8b6f47;
+	background-color: #5a3e36;
 }
 
 div.contenido{
