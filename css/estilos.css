@@ -1,6 +1,10 @@
 body{
-	background-color: red;
 	display: flex;
+	flex-direction: column;
+    align-content: center;
+    align-items: center;
+	margin-bottom: 0;
+	margin-top: 20px;
 }
 
 
@@ -62,6 +66,13 @@ div.pie{
 	background-color: #5a3e36;
 	color: #ecdcc6;
 	font-family: 'Helvetica', sans-serif;
-	font-size: 16px;
+	font-size: 14px;
 	text-align: center;
+	padding: 10px 0 20px 0;	
+}
+div.pie a{
+	color: #ecdcc6;
+	text-decoration: none;
+	padding: 0 10px;
+	font-size: 16px;
 }
