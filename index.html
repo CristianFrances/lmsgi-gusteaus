@@ -35,8 +35,28 @@
             </ul>
             <h3>Reservas</h3>
             <p>Reserve su mesa para una experiencia gastronómica inolvidable. Disfrute de la alta cocina en un ambiente elegante y acogedor.</p>
-            <h3>Contacto</h3>
-            <p>¿Preguntas? Contáctenos a través de nuestro formulario en línea o llámenos directamente.</p>
+            <div>                
+                <form action="/submit" method="post">
+                    <div id="camposReserva">
+                        <label>Nombre: <input type="text" name="nombre" id="nombre" required maxlength="25"> </label><br>
+                        <label>Apellidos: <input type="text" name="apellidos" id="apellidos" required maxlength="50"> </label><br>
+                        <label>Teléfono: <input type="number" name="telefono" id="telefono" min="100000000" max="999999999"> </label><br>
+                        <label>Email: <input type="email" name="email" id="email" required maxlength="50"> </label><br>
+                        <label>Número de personas: <input type="number" name="personas" id="personas" min="1" max="50" required> </label><br>
+                        <label>Fecha: <input type="date" name="fecha" id="fecha" required> </label><br>
+                        <input type="submit" value="Realizar reserva">   
+                    </div>   
+                    <div id="campoTexto">             
+                        <textarea></textarea><br>
+                    </div> 
+                   
+                
+                </form>
+            </div>
+            <div class="contacto">
+                <h3>Contacto</h3>
+                <p>¿Preguntas? Contáctenos a través de nuestro formulario en línea o llámenos directamente.</p>
+            </div>
         </div>
         <div class="sidebar">
             <h2>Eventos Especiales</h2>
@@ -46,21 +66,14 @@
                 <li>Cena de Gala Anual</li>
                 <li>Clases de Cocina con Chefs Expertos</li>
             </ul>
-            <div>
-                <h2>Haga su reserva</h2>
-                <form action="/submit" method="post">
-                
-                    <label>Nombre: <input type="text" name="nombre" id="nombre"> </label><br>
-                    <label>Apellidos: <input type="text" name="apellidos" id="apellidos"> </label><br>
-                    <label>Teléfono: <input type="number" name="telefono" id="telefono" min="100000000" max="999999999"> </label><br>
-                    <label>Email: <input type="email" name="email" id="email"> </label><br>
-                    <label>Número de personas: <input type="number" name="personas" id="personas" min="1" max="50"> </label><br>
-                    <label>Fecha: <input type="date" name="fecha" id="fecha"> </label><br>
 
-                   
-                
-                </form>
-            </div>
+            <h2>Horario</h2>
+            <p>Estamos siempre a vuestra disposición para que disfrutéis lo mejor de nosotros.</p>
+            <ul>
+                <li>De Lunes a viernes: 12:00 - 00:00</li>
+                <li>Fin de semana y festivos: 13:00 - 02:00</li>
+            </ul>
+            
         </div>
         <div class="pie">
             <a href="">Sobre nosotros</a>

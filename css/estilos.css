@@ -12,8 +12,7 @@ body{
 	background-color: #fff8f0;
 	font-family: 'Times New Roman', serif;
 	font-size: 16px;
-	width: 80%;
-	
+	width: 70%;	
 }
 
 div.encabezado{
@@ -23,8 +22,7 @@ div.encabezado{
 	font-size: 36px;
 	background-image: url("../imgs/guesteaus.png");
 	background-position-y: 600px;
-	background-size: 1520px;
-	
+	background-size: 1320px;	
 }
 
 div.encabezado #logo{
@@ -53,8 +51,7 @@ div.menu ul{
 }
 
 div.menu ul li{	
-	display: inline;
-	
+	display: inline;	
 }
 
 div.menu ul li a{
@@ -83,6 +80,20 @@ div.contenido{
 	box-sizing: border-box;
 }
 
+#camposReserva{
+	float: left;
+	padding-right: 30px;
+}
+
+#camposReserva label{
+	padding: 10px;
+}
+
+.contacto{
+	clear: both;
+	padding-top: 5px;
+}
+
 div.sidebar{
 	background-color: #ecdcc6;
 	color: #5a3e36;
@@ -105,9 +116,7 @@ div.pie{
 	font-size: 14px;
 	text-align: center;
 	padding: 20px 0 10px 0;
-	clear:both;
-
-	
+	clear:both;	
 }
 div.pie a{
 	color: #ecdcc6;
@@ -126,3 +135,5 @@ div.pie a:hover{
 	color: #fff8f0;
 	transition: 0.3s;
 }
+
+
