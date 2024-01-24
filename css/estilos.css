@@ -15,12 +15,6 @@ body{
 	width: 80%;
 }
 
-#contenedor::after{
-	content: "";
-  	display: table;
-  	clear: both;
-}
-
 div.encabezado{
 	height: 200px;
 	color: #5a3e36;
@@ -83,7 +77,7 @@ div.contenido{
 	font-family: 'Georgia', serif;
 	font-size: 18px;
 	float: left;
-	width: 68%;
+	width: 67%;
 	padding: 0 5px 0 15px;
 }
 
@@ -104,8 +98,6 @@ div.pie{
 	font-size: 14px;
 	text-align: center;
 	padding: 20px 0 10px 0;
-
-
 	clear:both;
 
 	
