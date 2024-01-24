@@ -15,6 +15,12 @@ body{
 	width: 80%;
 }
 
+#contenedor::after{
+	content: "";
+  	display: table;
+  	clear: both;
+}
+
 div.encabezado{
 	height: 200px;
 	color: #5a3e36;
@@ -22,7 +28,7 @@ div.encabezado{
 	font-size: 36px;
 	background-image: url("../imgs/guesteaus.png");
 	background-position-y: 600px;
-	background-size: 1510px;
+	background-size: 1520px;
 	
 }
 
@@ -76,6 +82,9 @@ div.contenido{
 	color: #5a3e36;
 	font-family: 'Georgia', serif;
 	font-size: 18px;
+	float: left;
+	width: 68%;
+	padding: 0 5px 0 15px;
 }
 
 div.sidebar{
@@ -83,6 +92,9 @@ div.sidebar{
 	color: #5a3e36;
 	font-family: 'Georgia', serif;
 	font-size: 18px;
+	float: right;
+	width: 30%;
+	padding: 5px;
 }
 
 div.pie{
@@ -91,7 +103,12 @@ div.pie{
 	font-family: 'Helvetica', sans-serif;
 	font-size: 14px;
 	text-align: center;
-	padding: 20px 0 10px 0;	
+	padding: 20px 0 10px 0;
+
+
+	clear:both;
+
+	
 }
 div.pie a{
 	color: #ecdcc6;
