@@ -35,24 +35,27 @@
             </ul>
             <h3>Reservas</h3>
             <p>Reserve su mesa para una experiencia gastronómica inolvidable. Disfrute de la alta cocina en un ambiente elegante y acogedor.</p>
-            <div>                
+                            
                 <form action="/submit" method="post">
-                    <div id="camposReserva">
-                        <label>Nombre: <input type="text" name="nombre" id="nombre" required maxlength="25"> </label><br>
-                        <label>Apellidos: <input type="text" name="apellidos" id="apellidos" required maxlength="50"> </label><br>
-                        <label>Teléfono: <input type="number" name="telefono" id="telefono" min="100000000" max="999999999"> </label><br>
-                        <label>Email: <input type="email" name="email" id="email" required maxlength="50"> </label><br>
-                        <label>Número de personas: <input type="number" name="personas" id="personas" min="1" max="50" required> </label><br>
-                        <label>Fecha: <input type="date" name="fecha" id="fecha" required> </label><br>
-                        <input type="submit" value="Realizar reserva">   
+                    <div id="camposReserva1">
+                        <label>Nombre: <input type="text" name="nombre" id="nombre" required maxlength="25" oninvalid="this.setCustomValidity('Por favor, ingrese su nombre')"> </label><br>
+                        <label>Apellidos: <input type="text" name="apellidos" id="apellidos" required maxlength="50" oninvalid="this.setCustomValidity('Por favor, ingrese sus apellidos')"> </label><br>
+                        <label>Teléfono: <input type="tel" name="telefono" id="telefono" min="100000000" max="999999999"> </label><br>
+                        <label>Email: <input type="email" name="email" id="email" required maxlength="50" oninvalid="this.setCustomValidity('Por favor, ingrese su correo electrónico')"> </label><br>
+                    </div>
+                    
+                        
+                    <div id="camposReserva2"> 
+                        <label>Número de personas: <input type="number" name="personas" id="personas" min="1" max="50" required oninvalid="this.setCustomValidity('Por favor, rellene el campo')"> </label><br>
+                        <label>Fecha: <input type="date" name="fecha" id="fecha" required oninvalid="this.setCustomValidity('Por favor, ingresa una fecha')"> </label><br>
+                        <label>Comentario: <input type="text" name="comentario" id="comentario"> </label><br>
+                        <input type="submit" id="enviar" value="Realizar reserva">
                     </div>   
-                    <div id="campoTexto">             
-                        <textarea></textarea><br>
-                    </div> 
+                       
                    
-                
+            
                 </form>
-            </div>
+            
             <div class="contacto">
                 <h3>Contacto</h3>
                 <p>¿Preguntas? Contáctenos a través de nuestro formulario en línea o llámenos directamente.</p>
