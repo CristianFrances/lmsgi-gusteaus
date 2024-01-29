@@ -113,48 +113,37 @@ main #sidebar{
 	box-sizing: border-box;
 }
 
-[data-alergenos="lacteos"]{
-	color: #aeb2c4;
+
+[data-alergenos~="nueces"]::after { 
+	content: "🥜 ";
 }
-[data-alergenos="gluten"]{
-	color: #be640f;
+
+[data-alergenos~="mariscos"]::after { 
+	content: "🦞 "; 
 }
-[data-alergenos="huevos"]{
-	color: #cca216;
+
+[data-alergenos~="gluten"]::after { 
+	content: "🥖 "; 
 }
-[data-alergenos="moluscos"]{
-	color: #993b94;
+
+[data-alergenos~="apio"]::after { 
+	content: "🥬 "; 
 }
-[data-alergenos="nueces"]{
-	color: #974643;
-	text-decoration: underline;
+
+[data-alergenos~="huevos"]::after { 
+	content: "🥚 "; 
 }
-[data-alergenos="apio"]{
-	color: #196d27;
+
+[data-alergenos~="lacteos"]::after { 
+	content: "🥛 "; 
 }
-[data-alergenos="mariscos"]{
-	color: #19afd4;
+
+[data-alergenos~="ajo"]::after { 
+	content: "🧄 ";
 }
-[data-alergenos="ajo"]{
-	color: #d8011e;
-}
-[data-alergenos="mariscos ajo"]{
-	color: #ca91ff;
-}
-[data-alergenos="nueces mariscos"]{
-	color: #ff006a;
-	text-decoration: underline;
-}
-[data-alergenos="gluten huevos lacteos"]{
-	color: #7ebe16;
-}
-[data-alergenos="gluten lacteos"]{
-	color: #5800fc;
-}
-[data-alergenos="huevos lacteos"]{
-	color: #0c5f85;
-	text-decoration: underline;
-	
+
+[data-alergenos~="moluscos"]::after { 
+	content: "🐚 "; 
 }
 
 
