@@ -4,16 +4,21 @@
     <meta charset="utf-8">
     <title>Restaurante Gusteau's</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/imgs/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
 <body>
     <div id="contenedor">
-        <div class="encabezado">Restaurante Gusteau's</div>
+        <div class="encabezado">
+            <img id="logo" src="./imgs/logo.png">
+            <div id="titulo">Restaurante Gusteau's</div>
+                        
+        </div>
         <div class="menu">
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#sobrenosotros">Sobre Nosotros</a></li>
-                <li><a href="#menu">Menú</a></li>
+                <li><a href="./menuEstrella/menuEstrella.html">Menú</a></li>
                 <li><a href="#reservas">Reservas</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
@@ -31,8 +36,31 @@
             </ul>
             <h3>Reservas</h3>
             <p>Reserve su mesa para una experiencia gastronómica inolvidable. Disfrute de la alta cocina en un ambiente elegante y acogedor.</p>
-            <h3>Contacto</h3>
-            <p>¿Preguntas? Contáctenos a través de nuestro formulario en línea o llámenos directamente.</p>
+                            
+                <form action="/submit" method="post">
+                    <div id="camposReserva1">
+                        <label>Nombre: <input type="text" name="nombre" id="nombre" required maxlength="25" oninvalid="this.setCustomValidity('Por favor, ingrese su nombre')"> </label><br>
+                        <label>Apellidos: <input type="text" name="apellidos" id="apellidos" required maxlength="50" oninvalid="this.setCustomValidity('Por favor, ingrese sus apellidos')"> </label><br>
+                        <label>Teléfono: <input type="tel" name="telefono" id="telefono" min="100000000" max="999999999"> </label><br>
+                        <label>Email: <input type="email" name="email" id="email" required maxlength="50" oninvalid="this.setCustomValidity('Por favor, ingrese su correo electrónico')"> </label><br>
+                    </div>
+                    
+                        
+                    <div id="camposReserva2"> 
+                        <label>Número de personas: <input type="number" name="personas" id="personas" min="1" max="50" required oninvalid="this.setCustomValidity('Por favor, rellene el campo')"> </label><br>
+                        <label>Fecha: <input type="date" name="fecha" id="fecha" required oninvalid="this.setCustomValidity('Por favor, ingresa una fecha')"> </label><br>
+                        <label>Comentario: <input type="text" name="comentario" id="comentario"> </label><br>
+                        <input type="submit" id="enviar" value="Realizar reserva">
+                    </div>   
+                       
+                   
+            
+                </form>
+            
+            <div class="contacto">
+                <h3>Contacto</h3>
+                <p>¿Preguntas? Contáctenos a través de nuestro formulario en línea o llámenos directamente.</p>
+            </div>
         </div>
         <div class="sidebar">
             <h2>Eventos Especiales</h2>
@@ -42,8 +70,22 @@
                 <li>Cena de Gala Anual</li>
                 <li>Clases de Cocina con Chefs Expertos</li>
             </ul>
+
+            <h2>Horario</h2>
+            <p>Estamos siempre a vuestra disposición para que disfrutéis lo mejor de nosotros.</p>
+            <ul>
+                <li>De Lunes a viernes: 12:00 - 00:00</li>
+                <li>Fin de semana y festivos: 13:00 - 02:00</li>
+            </ul>
+            
         </div>
-        <div class="pie">© 2024 Restaurante Gusteau's - París, Francia</div>
+        <div class="pie">
+            <a href="">Sobre nosotros</a>
+            <a href="./menuEstrella/menuEstrella.html">Menú</a>
+            <a href="">Reservas</a>
+            <a href="">Contacto</a><br><br>
+            <div class="copyright">© 2024 Restaurante Gusteau's - París, Francia</div>
+        </div>
     </div>
 </body>
 </html>

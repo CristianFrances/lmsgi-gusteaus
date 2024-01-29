@@ -1,25 +1,25 @@
 body{
-	display: flex;
+    display: flex;
 	flex-direction: column;
     align-content: center;
     align-items: center;
-	margin: 175px 0 170px 0;
+	margin: 160px 0 150px 0;
 	background-image: url("../imgs/bordes.png");
 	background-size: 100% 100%;
 }
 
-#contenedor {
+#contenido {
 	background-color: #fff8f0;
 	font-family: 'Times New Roman', serif;
 	font-size: 16px;
-	width: 70%;	
+	width: 70%;
 }
 
-div.encabezado{
+header{
 	height: 200px;
 	color: #5a3e36;
 	font-family: 'Georgia', serif;
-	padding-top: 0;
+	padding: 0;
 	font-size: 36px;
 	background-image: url("../imgs/guesteaus.png");
 	background-position-y: 600px;
@@ -27,38 +27,46 @@ div.encabezado{
 	border-radius: 5px;	
 }
 
-div.encabezado #logo{
+header #logo{
 	height: 150px;
 	width: 200px;
 	position: absolute;
 	padding: 20px;
 }
 
-div#titulo{
-	text-align: center;
-	padding: 55px 0;
+header h1{
+	height: 200px;
+    text-align: center;
+    font-size: 36px;
+	display: flex;
+	align-items: center;
+    justify-content: center;
+	padding-top: 0;
+	margin: 0;
+    color: #5a3e36;
 	text-shadow: 2px 2px 4px #ffffff;
+	
 }
 
-div.menu{
+nav{
 	background-color: #a77e58;
 	color: #ffffff;
 	margin-top: 10px;
 	border-radius: 5px;
 }
 
-div.menu ul{
+nav ul{
 	padding: 10px;
 	height: 40px;
 	display: flex;
 	align-items: center;
 }
 
-div.menu ul li{	
+nav ul li{	
 	display: inline;	
 }
 
-div.menu ul li a{
+nav ul li a{
 	background-color: #a77e58;
 	color: #ffffff;
 	font-family: 'Helvetica', sans-serif;
@@ -68,7 +76,7 @@ div.menu ul li a{
 	transition: 0.3s;
 }
 
-div.menu ul li a:hover{
+nav ul li a:hover{
 	background-color: #a77e58;
 	color: #5a3e36;
 	border: #5a3e36 1px solid;
@@ -78,97 +86,73 @@ div.menu ul li a:hover{
 	transition: 0.3s;
 }
 
-div.contenido{
+main {
 	background-color: #fff8f0;
 	color: #5a3e36;
 	font-family: 'Georgia', serif;
 	font-size: 18px;
-	float: left;
-	width: 70%;
 	padding: 0 5px 0 15px;
 	box-sizing: border-box;
 }
 
-label{
-	font-size: 16px;
-	display: block;
-}
-
-#camposReserva1{
+main .menu-estrella{
+	width: 37%;
 	float: left;
-	padding-right: 30px;
-	display: flex;
-	align-items: flex-end;
-    flex-direction: column;
-	
+	box-sizing: border-box;
 }
 
-#camposReserva1 input[type='text'], input[type='email'], input[type='tel']{
-	border: 1px solid #a77e58;
-	margin: 10px;
-	padding: 8px;
-	border-radius: 5px;
-	background-color: #fff8f0;
-	
-}
-
-#camposReserva2{
-	display: flex;
-	float: left;
-	padding-right: 30px;
-	align-items: flex-end;
-    flex-direction: column;
-} 
-#camposReserva2 input[type='date'],input[type='number'],input[type='text']{
-	background-color: #fff8f0;
-	border: 1px solid #a77e58;
-	padding: 10px;
-	margin: 0;
-	border-radius: 5px;
-	
-	
-}
-
-#enviar{
-	color:#5a3e36 ;
-	background-color: #ecdcc6;
-	border: 1px solid #a77e58;
-	padding: 10px 15px;
-	margin-right: 2px;
-	border-radius: 5px;
-	transition: 0.3s;
-}
-
-#enviar:hover{
-	color:#ffffff;
-	font-size: 14px;
-	background-color: #a77e58;
-	margin-right: 0;
-	transition: 0.3s;
-}
-
-.contacto{
-	clear: both;
-	padding-top: 5px;
-}
-
-div.sidebar{
+main #sidebar{
+	float: right;
+	width: 30%;
+	padding: 20px;
 	background-color: #ecdcc6;
 	color: #5a3e36;
 	font-family: 'Georgia', serif;
 	font-size: 18px;
-	float: right;
-	width: 30%;
-	padding: 20px;
 	border-radius: 5px;
 	box-sizing: border-box;
 }
 
-div.sidebar h2{
-	margin: 25px 0 15px ;
+
+[data-alergenos~="nueces"]::after { 
+	content: "🥜 ";
 }
 
-div.pie{
+[data-alergenos~="mariscos"]::after { 
+	content: "🦞 "; 
+}
+
+[data-alergenos~="gluten"]::after { 
+	content: "🥖 "; 
+}
+
+[data-alergenos~="apio"]::after { 
+	content: "🥬 "; 
+}
+
+[data-alergenos~="huevos"]::after { 
+	content: "🥚 "; 
+}
+
+[data-alergenos~="lacteos"]::after { 
+	content: "🥛 "; 
+}
+
+[data-alergenos~="ajo"]::after { 
+	content: "🧄 ";
+}
+
+[data-alergenos~="moluscos"]::after { 
+	content: "🐚 "; 
+}
+
+
+.menu-estrella li:hover{
+	font-weight: bold;
+}
+
+
+footer{
 	background-color: #5a3e36;
 	color: #ecdcc6;
 	font-family: 'Helvetica', sans-serif;
@@ -176,27 +160,26 @@ div.pie{
 	text-align: center;
 	padding: 20px 0 10px 0;
 	border-radius: 5px;
-	clear:both;	
+	clear:both;
 }
-div.pie a{
+footer a{
 	color: #ecdcc6;
 	text-decoration: none;
 	padding: 0 10px;
 	font-size: 16px;
 	transition: 0.3s;
+	
 }
 
-div.pie .copyright{
+footer .copyright{
 	border-top: 1px solid #271d0a; 
   	padding-top: 20px;
 }
 
-div.pie a:hover{
+footer a:hover{
 	color: #fff8f0;
 	border: #fff8f0 1px solid;
 	border-radius: 5px;
 	padding: 10px;
 	transition: 0.3s;
 }
-
-
